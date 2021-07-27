@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="additionalInfo">additionalInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="address">address</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="assignAddAlias">assignAddAlias</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="checkNewsLetter">checkNewsLetter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="checkReceiveSpecial">checkReceiveSpecial</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="city">city</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="clicksubmit">clicksubmit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="company">company</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="country">country</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="enterFirstName">enterFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="enterLastName">enterLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="enterPass">enterPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="enteremail">enteremail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="mobilephone">mobilephone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="openurl">openurl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="personalinfo">personalinfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="selectRadio">selectRadio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="selectdays">selectdays</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="signin">signin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="state">state</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="homeWork.XpathCssTestAssert" hash-for-method="zipcode">zipcode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">homeWork.XpathCssTestAssert</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="additionalInfo">
+                  </a> <!-- additionalInfo -->
+                  <span class="method-name">additionalInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="address">
+                  </a> <!-- address -->
+                  <span class="method-name">address</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assignAddAlias">
+                  </a> <!-- assignAddAlias -->
+                  <span class="method-name">assignAddAlias</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkNewsLetter">
+                  </a> <!-- checkNewsLetter -->
+                  <span class="method-name">checkNewsLetter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkReceiveSpecial">
+                  </a> <!-- checkReceiveSpecial -->
+                  <span class="method-name">checkReceiveSpecial</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="city">
+                  </a> <!-- city -->
+                  <span class="method-name">city</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clicksubmit">
+                  </a> <!-- clicksubmit -->
+                  <span class="method-name">clicksubmit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="company">
+                  </a> <!-- company -->
+                  <span class="method-name">company</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="country">
+                  </a> <!-- country -->
+                  <span class="method-name">country</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterFirstName">
+                  </a> <!-- enterFirstName -->
+                  <span class="method-name">enterFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterLastName">
+                  </a> <!-- enterLastName -->
+                  <span class="method-name">enterLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterPass">
+                  </a> <!-- enterPass -->
+                  <span class="method-name">enterPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enteremail">
+                  </a> <!-- enteremail -->
+                  <span class="method-name">enteremail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mobilephone">
+                  </a> <!-- mobilephone -->
+                  <span class="method-name">mobilephone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openurl">
+                  </a> <!-- openurl -->
+                  <span class="method-name">openurl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalinfo">
+                  </a> <!-- personalinfo -->
+                  <span class="method-name">personalinfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectRadio">
+                  </a> <!-- selectRadio -->
+                  <span class="method-name">selectRadio</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectdays">
+                  </a> <!-- selectdays -->
+                  <span class="method-name">selectdays</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signin">
+                  </a> <!-- signin -->
+                  <span class="method-name">signin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="state">
+                  </a> <!-- state -->
+                  <span class="method-name">state</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zipcode">
+                  </a> <!-- zipcode -->
+                  <span class="method-name">zipcode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/8k/44v4z8l12xgf3zvb28mkdz0r0000gn/T/testng-eclipse--126772418/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;homeWork.XpathCssTestAssert&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'selectdays')
+data.setCell(0, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(0, 3, 20556);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'signin')
+data.setCell(1, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(1, 3, 5796);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openurl')
+data.setCell(2, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(2, 3, 5459);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'personalinfo')
+data.setCell(3, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(3, 3, 4115);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'state')
+data.setCell(4, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(4, 3, 679);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'zipcode')
+data.setCell(5, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(5, 3, 341);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'additionalInfo')
+data.setCell(6, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(6, 3, 338);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkNewsLetter')
+data.setCell(7, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(7, 3, 290);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'enteremail')
+data.setCell(8, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(8, 3, 191);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'mobilephone')
+data.setCell(9, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(9, 3, 145);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'assignAddAlias')
+data.setCell(10, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(10, 3, 141);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'country')
+data.setCell(11, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(11, 3, 141);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'address')
+data.setCell(12, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(12, 3, 131);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'company')
+data.setCell(13, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(13, 3, 92);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'enterFirstName')
+data.setCell(14, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(14, 3, 85);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'city')
+data.setCell(15, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(15, 3, 84);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'clicksubmit')
+data.setCell(16, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(16, 3, 81);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'enterLastName')
+data.setCell(17, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(17, 3, 79);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'enterPass')
+data.setCell(18, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(18, 3, 72);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkReceiveSpecial')
+data.setCell(19, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(19, 3, 62);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'selectRadio')
+data.setCell(20, 2, 'homeWork.XpathCssTestAssert')
+data.setCell(20, 3, 54);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">homeWork.XpathCssTestAssert</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">openurl</span>
+                <span class="method-start">3323 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signin</span>
+                <span class="method-start">8793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enteremail</span>
+                <span class="method-start">14594 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clicksubmit</span>
+                <span class="method-start">14787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">personalinfo</span>
+                <span class="method-start">14870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectRadio</span>
+                <span class="method-start">18987 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterFirstName</span>
+                <span class="method-start">19042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterLastName</span>
+                <span class="method-start">19129 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterPass</span>
+                <span class="method-start">19209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectdays</span>
+                <span class="method-start">19283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkNewsLetter</span>
+                <span class="method-start">39840 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkReceiveSpecial</span>
+                <span class="method-start">40131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">company</span>
+                <span class="method-start">40194 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">address</span>
+                <span class="method-start">40287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">city</span>
+                <span class="method-start">40419 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">state</span>
+                <span class="method-start">40504 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">zipcode</span>
+                <span class="method-start">41184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">country</span>
+                <span class="method-start">41526 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">additionalInfo</span>
+                <span class="method-start">41669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mobilephone</span>
+                <span class="method-start">42008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">assignAddAlias</span>
+                <span class="method-start">42154 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">close</span>
+                <span class="method-start">42296 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
